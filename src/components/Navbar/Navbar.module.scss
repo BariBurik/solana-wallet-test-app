@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    padding: 20px 150px;
+    background-color: #000;
+    justify-content: space-between;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    border-top: #fff 1px solid;
+}
+
+.link {
+    margin-right: 10px;
+    color: rgb(235, 235, 235);
+}

@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Добро пожаловать на кошелёк для перевода SOL (тестовых)
 
-First, run the development server:
+## Клонирование репозитория
+
+Для начала клонируйте репозиторий на ваш компьютер:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/BariBurik/solana-wallet-test-app.git
+cd solana-wallet-test-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Установка зависимостей
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Установите все необходимые зависимости:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm i
+```
 
-## Learn More
+## Сборка и запуск приложения
 
-To learn more about Next.js, take a look at the following resources:
+Сначала сбилдьте приложение, затем запустите его:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Пополнение кошелька
 
-## Deploy on Vercel
+Чтобы пополнить кошелёк, перейдите на страницу кошелька (иконка монетки). После инициализации или создания нового кошелька нажмите на кнопку для пополнения.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Подтверждение транзакции
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Транзакция подтверждается автоматически после отправки.
+
+---
+
+### Дополнительная информация
+
+#### Создание нового кошелька
+
+В приложении вы можете создать новый кошелёк, после ввода seed-фразы, состоящей из 32 латинских(и пробел) символа, который будет отображать баланс, публичный и приватный ключи.
+
+#### Инициализация кошелька
+
+Можно также инициализировать уже созданный кошелёк по PrivateKey.
+
+#### Пополнение кошелька
+
+После инициализации или создания кошелька можно по кнопке получить 10 SOL
+
+#### Отправка SOL
+
+На странице транзакций вы можете ввести количество SOL для перевода и адрес кошелька получателя. После отправки транзакция будет подтверждена автоматически.
+
+

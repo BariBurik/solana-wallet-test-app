@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    
+    border-radius: 10px;
+    border: none;
+
+    background-color: #fff;
+    color: #000;
+
+    cursor: pointer;
+
+    &:active {
+        background-color: #b9b9b9;
+    }
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+     margin-bottom: 10px;
+}
+
+.input {    
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+
+    padding: 30px 60px;
+
+    margin-bottom: 10px;
+}
+
+.key {
+    color: #d1d1d1;
+    margin-top: 10px;
+}
+
+.input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 10px;
+    background-color: #000;
+    color: #fff;
+
+    &:focus {
+        border: #fff 1px solid;
+    }
+}
+
+.btn_modal {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+}
+
+.error {
+    color: red;
+}
